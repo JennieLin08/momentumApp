@@ -1,0 +1,133 @@
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Titan+One&display=swap');
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #171616;
+  /* font-family: 'Courgette', cursive; */
+   font-family: 'Oleo Script', cursive;
+}
+
+.bg{
+  z-index: -1;
+  background-position: center;
+  /* background-image: url("images/bg1.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#bgAskName{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  position: absolute;
+  top: 250px;
+  left: 60px;
+  z-index: 100;
+}
+input[type=text]{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#focus, #promptName{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px whitesmoke solid;
+  box-shadow: 0px 2px 5px #000000;
+  text-align: center;
+  font-size: 30px;
+}
+
+#inputTodo{
+   background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px whitesmoke solid;
+  text-align: center;
+  color: white;
+}
+#inputTodo::placeholder{
+  color:whitesmoke;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#modalContent{
+  background-color: rgb(28, 35, 51, 0.5);
+}
+
+#btnShowAddQuoteModal{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#currentTime{
+  color: white;
+  font-size: 50px;
+  font-family: 'Titan One', cursive;
+}
+
+ #quoteToday,#welcomeName{
+  color: white;
+  text-shadow: 2px 2px 8px #000000;
+   /* font-family: 'Pacifico', cursive; */
+ 
+}
+
+
+#btnShowAddQuoteModal{
+    color: white;
+  text-shadow: 2px 2px 8px #000000;
+}
+#btnNextQuote{
+margin-top: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  
+}
+
+.row-item{
+  opacity: 0;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  
+}
+
+.container .row div{
+  padding-top:10px;
+}
+
+#btnToDoShow{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+#todoApp{
+  
+  background-color: rgb(28, 35, 51, 0.8);
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px #000000;
+  border-radius: 10px;
+  margin: 5px;
+
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  
+}
+
+.todoAppShow{
+    display: none;
+}
+
+.h4todo{
+  text-shadow: 2px 2px 8px #000000;
+}

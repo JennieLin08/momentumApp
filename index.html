@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Momentum App</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg" id="bg" onload="bgChange()">
+  <!-- <img class="bg h-100 " src="images/bg2.jpg" alt=""> -->
+  <div id="bgAskName" class="row col-12 d-flex justify-content-center align-items-center text-center">
+    <div class="col-10">
+      <h1>Please enter your Name:</h1>
+    </div>
+    <div class="col-10">
+      <input type="text" class="" id="promptName" name="promptName">
+    </div>
+  </div>
+
+  <div class="container h-100 d-flex justify-content-center align-items-center text-center">
+
+    <div class="row col d-flex justify-content-center align-items-center text-center">
+      <div class="row-item col-10 ">
+        <h1 id="currentTime" class="time"></h1>
+      </div>
+      <div class="row-item col-10 ">
+        <h2 id="welcomeName"></h2>
+      </div>
+      <div class="row-item col-10 ">
+        <h2>What is your main focus for today ?</h2>
+      </div>
+      <div class="row-item col-10 ">
+        <input type="text" id="focus" class="">
+      </div>
+      <div class="row-item col-10">
+        <button id="btnNextQuote">
+          <h3 id="quoteToday"></h3>
+        </button>
+      </div>
+      <div class="row-item col-10 ">
+        <h1><button id="btnShowAddQuoteModal" data-toggle="modal" data-target="#showAddQuoteModal">+</button> </h1>
+      </div>
+      <div class="row-item col-10 ">
+        <!-- todo list  -->
+        <button id="btnToDoShow" class="btn btn-basic">
+          <h4 class="text-white h4todo">todo</h4>
+        </button>
+      </div>
+
+      <div id="todoApp" class=" todoAppShow" style="height:auto;width: 320px;overflow-y: visible;">
+        <h5>To Do Today</h5>
+        <div id="todoListWrapper" class="todoListWrapper">
+          <!-- <div id="rowTodoList" class="row col-12 d-flex align-items-center justify-content-start" style="height:30px;">
+            <div id="todoCBdiv" class=" col-2">
+              <input id="cbtodo_1" type="checkbox" onchange="cbTodoFn(this.id,`e`)">
+            </div>
+            <div id="todoTaskdiv" class=" col-8" style="text-align: initial;">
+              <h6>test</h6>
+            </div>
+            <div class=" col-2">
+              <button id="todox" class="btn btn-basic">x</button>
+            </div>
+          </div> -->
+
+        </div>
+        <div class=" col-12 p-3 m-3">
+          <input type="text" id="inputTodo" placeholder="New to do">
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="showAddQuoteModal" class="modal fade container" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div id="modalContent" class="modal-content col d-flex justify-content-center align-items-center text-center">
+        <div class="modal-header text-white">
+          <h4 class="modal-title ">Write ur Quote</h4>
+          <button type="button" id="closeModalQuote" class="btn-close btn-close-white p-2 m-3" data-dismiss="modal">
+            <!-- &times; -->
+          </button>
+        </div>
+        <div class="modal-body">
+          <textarea class="" name="newQuote" id="newQuote" cols="50" rows="2"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button id="btnAddQuote" type="button" class="btn btn-dark" data-dismiss="modal">Add</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>
